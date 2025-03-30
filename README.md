@@ -76,6 +76,31 @@ by nucleases (a type of enzyme that cleaves DNA). If you are to plot the
 protected fragments at protein binding sites, it will take a V-form. Your goal
 is to show this V-formation using the input data. 
 
+[data](https://figshare.com/ndownloader/files/49307590)
+
+Example lines from the above file: 
+
+```
+2	chr1	90919	91937	chr1:91382-91550|carroll_ctcf_mcf7_v45m`2_GTGGCACCAGGTGGCAGCA	16.2951	+	chr1	90838	91006	IH02_00.pairs@15152	168	+
+2	chr1	90919	91937	chr1:91382-91550|carroll_ctcf_mcf7_v45m`2_GTGGCACCAGGTGGCAGCA	16.2951	+	chr1	90846	90998	IH02_04.pairs@4163	152	+
+2	chr1	90919	91937	chr1:91382-91550|carroll_ctcf_mcf7_v45m`2_GTGGCACCAGGTGGCAGCA	16.2951	+	chr1	90851	91000	IH02_04.pairs@4164	149	+
+```
+
+From every line of this file, you have to derive three values:
+
+- X: Difference between two centers. C1 = center using Column3 and Column4, C2 = center using Column9 and Column10. X-coordinate will be C2 - C1 
+
+- Y: Column10 - Column9 
+
+- Z: Counter of Y at X. By default Z for Y at X is Zero. 
+
+And example is:
+
+-500 65 10
+
+X: -500, Y: 65, and Z: 10, telling that 500 bases relative to protein bound to DNA has 10 fragments of 65 base pair in size.
+
+You have to plot a heatmap of this.  
 
 ### Writing codes for linear regression (2 marks)
 
@@ -116,11 +141,17 @@ Same as asked to CY students (see above)
 
 ### Multi-line sequence fasta to single-line fasta file (1 mark)
 
+Same as asked to CY students (see above)
+
 ### Writing Viterbi Algorithm for the Primer (3 marks) 
 
 Write the Viterbi algorithm to implment Nature Primer.
 
 ### V-plot (1 mark)
+
+Same as asked to CY students 
+
+[data](https://figshare.com/ndownloader/files/49307590)
 
 ### Principle Component Analysis (2 marks)
 
