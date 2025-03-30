@@ -19,6 +19,8 @@ will be fragment length (unit: base pairs) and Y-axis will be labelled
 "Narmalized Frequency [A.U.]". Fragment length can simply be calculated by
 subtracting 2nd column from the 3rd.
 
+[query.bed.gz](https://figshare.com/ndownloader/files/53306780?private_link=727f8d920a1b8415f09a) 
+
 ### Multi-line sequence fasta to single-line fasta file (1 mark)
 
 Fasta file format is shown below. Many times, it is annoying to find sequences
@@ -87,7 +89,7 @@ Take [2R5Z](https://files.rcsb.org/download/2R5Z.pdb) structure from PDB databas
 
 ### Fragment length frequency (1 mark) + rescaling (2 marks) 
 
-You are given a file with each line indicating where a DNA fragment has mapped
+You are given a file (see link below) with each line indicating where a DNA fragment has mapped
 on the chromosome. Your goal is to count individual fragment lengths, and then
 normalize it by the total count of all fragment lengths. Once you have the
 normalized count, you will plot that using plotting packages in Python. X-axis
@@ -95,12 +97,32 @@ will be fragment length (unit: base pairs) and Y-axis will be labelled
 "Narmalized Frequency [A.U.]". Fragment length can simply be calculated by
 subtracting 2nd column from the 3rd.
 
+[query.bed.gz](https://figshare.com/ndownloader/files/53306780?private_link=727f8d920a1b8415f09a) 
+
 #### Rescaling
 
 Often, you will received two sets of data with differnt emperical distribution.
 The goal is to rescale one (query) to the other (reference). In this part, you
-will write codes to achieve this. You are given a reference distribution (from
-the 1st part above) and another file (query). You have to rescale (subsample
-the data) so that when you draw the normalized frequency, it should almost
-match the reference (almost because its emperical).
+will write codes to achieve this. You are given a reference distribution
+(`reference.hist`) and a query bed file (query.bed.gz). You have to rescale
+(subsample the data) so that when you draw the normalized frequency, it should
+almost match the reference. 
 
+[reference.hist](https://figshare.com/ndownloader/files/53306810?private_link=727f8d920a1b8415f09a)
+
+### Building Markov transition matrix (1 mark)
+
+Same as asked to CY students (see above)
+
+### Multi-line sequence fasta to single-line fasta file (1 mark)
+
+### Writing Viterbi Algorithm for the Primer (3 marks) 
+
+Write the Viterbi algorithm to implment Nature Primer.
+
+### V-plot (1 mark)
+
+### Principle Component Analysis (2 marks)
+
+Write codes in Python to perform PCA and understand why we need such
+unsupervised learning method. 
