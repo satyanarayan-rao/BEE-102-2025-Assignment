@@ -152,6 +152,16 @@ Same as asked to CY students (see above)
 
 Write the Viterbi algorithm to implment Nature Primer.
 
+Here are some suggestions:
+
+a. You can begin by first defining all the parameters, such as states, transition matrix, and emmision matrix etc.
+
+b. You can write a function to exactly calculate the values mentioned in the primer, for example, you can define a function `get_log_prob_of_a_given_path ("EEEEEEEEEEEEEEEEEE5IIIIIII", "CTTCATGTGAAAGCAGACGTAAGTCA")`. This should output `-41.22`. 
+
+By doing the above two, you earn `1` mark. 
+
+Now, you have to implement this in real to get max likely path that would emmit the observed sequence. You MUST note that  maximum likely path will just be `Es`, but that is okay. Implementation is the key. 
+
 ### V-plot (1 mark)
 
 Same as asked to CY students 
