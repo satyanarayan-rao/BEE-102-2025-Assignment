@@ -109,7 +109,7 @@ You have to plot a heatmap of this.
 
 ### Writing codes for linear regression (2 marks)
 
-Design data yourself, 
+Design data yourself, and use linear regression function in python to build the model. Explain, Total Sum of Squares, Explained Sum of Squares and Residual Sum of Squares that you learnt in the class.
 
 ### Reading a PDB file to output protein sequence
 
