@@ -5,7 +5,12 @@ This repository has programming question for CSE 2<sup>nd</sup> year students
 
 Few notes for completing the assignment:
 
-1. All codes are to be written in Jupyter-Notebook or Jupyter-Lab.
+1. All codes are to be written in Jupyter-Notebook (.ipynb file). 
+
+2. Notebook file should clealy state question number and good documentation. 
+
+3. Only notebooks uploaded on Github will be graded. 
+
 
 ## For CY students
 
