@@ -59,6 +59,9 @@ GGTTCATCTAATAGTACTACCTCTTCTACTCGC
 
 ```
 
+Actual input file: [multiline_input.fasta](./multiline_input.fasta)
+
+
 NOTE: points to consider
 -----
 If you will use `list` data structure to store sequence to print later, imagine
@@ -81,7 +84,7 @@ by nucleases (a type of enzyme that cleaves DNA). If you are to plot the
 protected fragments at protein binding sites, it will take a V-form. Your goal
 is to show this V-formation using the input data. 
 
-[data](https://figshare.com/ndownloader/files/49307590)
+[data](https://figshare.com/ndownloader/files/49307590?private_link=972ecdfe69d6ce038ca0)
 
 Example lines from the above file: 
 
