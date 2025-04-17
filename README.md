@@ -143,6 +143,10 @@ almost match the reference.
 
 [reference.hist](https://figshare.com/ndownloader/files/53306810?private_link=727f8d920a1b8415f09a)
 
+The expected output would look like the following:
+
+![rescale](./rescale_output.png)
+
 ### Building Markov transition matrix (1 mark)
 
 Same as asked to CY students (see above)
@@ -173,5 +177,24 @@ Same as asked to CY students
 
 ### Principle Component Analysis (2 marks)
 
-Write codes in Python to perform PCA and understand why we need such
-unsupervised learning method. 
+Write codes in Python to perform PCA and understand why we need such unsupervised learning method. Please implement PCA as it has been done in the Nature Primer. See [here](https://www.nature.com/articles/nbt0308-303). 
+You will ALMOST (the data point values may differ a bit, but the patterns will be similar) be reproducing Figure 1 of the paper. The data for all 105 patient samples are organized in three files. 
+
+- `data/class.tsv`: has the labels. 1 (ER+ breast cancer), 0 (ER- breast cancer). 
+
+- `data/filtered.tsv.gz`: complete dataset. Header is the ID for genes. 
+
+- `data/columns.tsv.gz`: ID to gene name mapping.
+
+
+For example, 4404 is the ID for gene XBP1 (Figure 1a - Y-axis).
+
+Your goal is to:
+
+1. Extract XBP1 and GATA3 expression levels in all 105 patients, and generate the scatter plot as seen in 1a (coloring should be done by the class). Remember that pattern in your plot should be similar to the paper.
+
+2. Run PCA on the matrix and project these 2-D points on PC1. Generate Fgure 1c.
+
+See the plot below. 
+
+![pca](./pca.png)
